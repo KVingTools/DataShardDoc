@@ -28,7 +28,6 @@ var NAVTREE =
     [ "Examples", "user", null ],
     [ "API", "usergroup0.html", [
       [ "Class List", "annotated.html", "annotated" ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],

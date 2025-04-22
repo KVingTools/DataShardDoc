@@ -101,19 +101,17 @@ $(function(){initNavTree('class_data_shard_subsystem.html',''); initResizable(tr
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_data_shard_subsystem-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">DataShardSubsystem Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> manages the creation, access, and lifecycle of DataShards.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;DataShardSubsystem.h&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for DataShardSubsystem:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_data_shard_subsystem.png" alt=""/>
- </div></div>
+
+<p>Inherits UGameInstanceSubsystem.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -159,8 +157,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac98e12e7ddac48883124d596db14daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae865f06460f43e8e5cbf06cbd769490a" id="r_ae865f06460f43e8e5cbf06cbd769490a"><td class="memItemLeft" align="right" valign="top">const FFieldClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae865f06460f43e8e5cbf06cbd769490a">GetFieldClassFromShard</a> (const FDataShardKey &amp;Key) const</td></tr>
 <tr class="separator:ae865f06460f43e8e5cbf06cbd769490a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75c879171d269fc9ab5e24f7664474d1" id="r_a75c879171d269fc9ab5e24f7664474d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c879171d269fc9ab5e24f7664474d1">IsDataShardSameType</a> (const FDataShardKey &amp;Key, const FProperty *InProperty) const</td></tr>
-<tr class="separator:a75c879171d269fc9ab5e24f7664474d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf28b0360ee79c938e2b34cb0b82574" id="r_a3cf28b0360ee79c938e2b34cb0b82574"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cf28b0360ee79c938e2b34cb0b82574">IsShardTypeOf</a> (const FDataShardKey &amp;Key, const FFieldClass *InClass) const</td></tr>
 <tr class="separator:a3cf28b0360ee79c938e2b34cb0b82574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1339721d42bbe087e7865d2ccef76df" id="r_ae1339721d42bbe087e7865d2ccef76df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1339721d42bbe087e7865d2ccef76df">IsShardTypeChildOf</a> (const FDataShardKey &amp;Key, const FFieldClass *InClass) const</td></tr>
@@ -187,19 +183,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a007627c94a7bb461808ced4e82593943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4608a543c90c817da7dcebda014be8f" id="r_ac4608a543c90c817da7dcebda014be8f"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4608a543c90c817da7dcebda014be8f">GetDebugDataForObject</a> (const UObject *InObject) const</td></tr>
 <tr class="separator:ac4608a543c90c817da7dcebda014be8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a24490ef4db64f1de996069fc45f04e64" id="r_a24490ef4db64f1de996069fc45f04e64"><td class="memItemLeft" align="right" valign="top">FOnShardAdded&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24490ef4db64f1de996069fc45f04e64">OnShardAdded</a></td></tr>
-<tr class="separator:a24490ef4db64f1de996069fc45f04e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e360634bf163985dc78d3cb755fd691" id="r_a3e360634bf163985dc78d3cb755fd691"><td class="memItemLeft" align="right" valign="top">FOnKeyChange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e360634bf163985dc78d3cb755fd691">OnKeyAdded</a></td></tr>
-<tr class="separator:a3e360634bf163985dc78d3cb755fd691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49c6ebffbc9b609b01e50d31df5d2fe7" id="r_a49c6ebffbc9b609b01e50d31df5d2fe7"><td class="memItemLeft" align="right" valign="top">FOnKeyChange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49c6ebffbc9b609b01e50d31df5d2fe7">OnKeyRemoved</a></td></tr>
-<tr class="separator:a49c6ebffbc9b609b01e50d31df5d2fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37f796786f763077c8ab7381172797e1" id="r_a37f796786f763077c8ab7381172797e1"><td class="memItemLeft" align="right" valign="top">FOnShardRemoved&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37f796786f763077c8ab7381172797e1">OnShardRemoved</a></td></tr>
-<tr class="separator:a37f796786f763077c8ab7381172797e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> manages the creation, access, and lifecycle of DataShards. </p>
+<p>DataShards are a flexible data-sharing system that allows game objects to store and access type-safe data throughout the game. The subsystem provides:</p>
+<ul>
+<li>Creation and management of typed data containers (@DataShardObject)</li>
+<li>Key-based access to data with owner object association</li>
+<li>Reference counting for automatic cleanup</li>
+<li>Event notification when data changes</li>
+<li>Type safety and validation</li>
+</ul>
+<p>This subsystem acts as the central manager for all DataShard operations and should be accessed through the UDataShardUtils_BP utility functions in most cases, rather than directly. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abb20a4861c379d6813e9d39de9c645bb" name="abb20a4861c379d6813e9d39de9c645bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb20a4861c379d6813e9d39de9c645bb">&#9670;&#160;</a></span>BindEventOnDataChange() <span class="overload">[1/2]</span></h2>
 
@@ -862,35 +858,6 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="a75c879171d269fc9ab5e24f7664474d1" name="a75c879171d269fc9ab5e24f7664474d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75c879171d269fc9ab5e24f7664474d1">&#9670;&#160;</a></span>IsDataShardSameType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DataShardSubsystem::IsDataShardSameType </td>
-          <td>(</td>
-          <td class="paramtype">const FDataShardKey &amp;</td>          <td class="paramname"><span class="paramname"><em>Key</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const FProperty *</td>          <td class="paramname"><span class="paramname"><em>InProperty</em></span>&#160;) const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if a shard's property is the same type of the specific property </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Key</td><td>The key of the shard to query </td></tr>
-    <tr><td class="paramname">InProperty</td><td>The property to check against </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if data shard property is the same type as the InProperty </dd></dl>
-
-</div>
-</div>
 <a id="acb66ec6dd1644bacdb986d9b27407e0c" name="acb66ec6dd1644bacdb986d9b27407e0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb66ec6dd1644bacdb986d9b27407e0c">&#9670;&#160;</a></span>IsKeyValid()</h2>
 
@@ -1176,67 +1143,6 @@ template&lt;typename T&gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3e360634bf163985dc78d3cb755fd691" name="a3e360634bf163985dc78d3cb755fd691"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e360634bf163985dc78d3cb755fd691">&#9670;&#160;</a></span>OnKeyAdded</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnKeyChange DataShardSubsystem::OnKeyAdded</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Broadcast when a new key is added to the system </p>
-
-</div>
-</div>
-<a id="a49c6ebffbc9b609b01e50d31df5d2fe7" name="a49c6ebffbc9b609b01e50d31df5d2fe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49c6ebffbc9b609b01e50d31df5d2fe7">&#9670;&#160;</a></span>OnKeyRemoved</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnKeyChange DataShardSubsystem::OnKeyRemoved</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Broadcast when a key is removed from the system </p>
-
-</div>
-</div>
-<a id="a24490ef4db64f1de996069fc45f04e64" name="a24490ef4db64f1de996069fc45f04e64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24490ef4db64f1de996069fc45f04e64">&#9670;&#160;</a></span>OnShardAdded</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnShardAdded DataShardSubsystem::OnShardAdded</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Broadcast when a new shard is added to the system </p>
-
-</div>
-</div>
-<a id="a37f796786f763077c8ab7381172797e1" name="a37f796786f763077c8ab7381172797e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37f796786f763077c8ab7381172797e1">&#9670;&#160;</a></span>OnShardRemoved</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnShardRemoved DataShardSubsystem::OnShardRemoved</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Broadcast when a shard is removed from the system </p>
 
 </div>
 </div>

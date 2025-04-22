@@ -23,7 +23,6 @@ var class_data_shard_subsystem =
     [ "GetShardIDsForObject", "class_data_shard_subsystem.html#a6948c94ff546d9f2fd936f2829834f40", null ],
     [ "GetShardStringDump", "class_data_shard_subsystem.html#acfd2f0eadad2887f1e54f264019724ab", null ],
     [ "Initialize", "class_data_shard_subsystem.html#aad7210aa1f9a5bf1fe8f3b2e73120f31", null ],
-    [ "IsDataShardSameType", "class_data_shard_subsystem.html#a75c879171d269fc9ab5e24f7664474d1", null ],
     [ "IsKeyValid", "class_data_shard_subsystem.html#acb66ec6dd1644bacdb986d9b27407e0c", null ],
     [ "IsShardTypeChildOf", "class_data_shard_subsystem.html#ae1339721d42bbe087e7865d2ccef76df", null ],
     [ "IsShardTypeOf", "class_data_shard_subsystem.html#a3cf28b0360ee79c938e2b34cb0b82574", null ],
@@ -33,9 +32,5 @@ var class_data_shard_subsystem =
     [ "UnbindAllEventsOnDataChange", "class_data_shard_subsystem.html#afb872e6b5f68a43e18b21c5a968028cb", null ],
     [ "UnbindAllEventsOnDataChange", "class_data_shard_subsystem.html#aac98e12e7ddac48883124d596db14daa", null ],
     [ "UnbindEventOnDataChange", "class_data_shard_subsystem.html#a3edf917a503cf6f502ee6261074324e2", null ],
-    [ "UnbindEventOnDataChange", "class_data_shard_subsystem.html#a2b74b88d5647e015737a21c16a85d221", null ],
-    [ "OnKeyAdded", "class_data_shard_subsystem.html#a3e360634bf163985dc78d3cb755fd691", null ],
-    [ "OnKeyRemoved", "class_data_shard_subsystem.html#a49c6ebffbc9b609b01e50d31df5d2fe7", null ],
-    [ "OnShardAdded", "class_data_shard_subsystem.html#a24490ef4db64f1de996069fc45f04e64", null ],
-    [ "OnShardRemoved", "class_data_shard_subsystem.html#a37f796786f763077c8ab7381172797e1", null ]
+    [ "UnbindEventOnDataChange", "class_data_shard_subsystem.html#a2b74b88d5647e015737a21c16a85d221", null ]
 ];
