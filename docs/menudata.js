@@ -24,7 +24,8 @@
 */
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
-{text:"Classes",url:"annotated.html",children:[
+{text:"Examples",url:"user"},
+{text:"API",url:"usergroup0.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[

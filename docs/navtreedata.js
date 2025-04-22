@@ -25,8 +25,9 @@
 var NAVTREE =
 [
   [ "Data Shard Plugin", "index.html", [
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
+    [ "Examples", "user", null ],
+    [ "API", "usergroup0.html", [
+      [ "Class List", "annotated.html", "annotated" ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
