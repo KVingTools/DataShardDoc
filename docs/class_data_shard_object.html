@@ -103,11 +103,16 @@ $(function(){initNavTree('class_data_shard_object.html',''); initResizable(true)
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_data_shard_object-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DataShardObject Class Reference</div></div>
+  <div class="headertitle"><div class="title">DataShardObject Class Reference<div class="ingroups"><a class="el" href="group___core.html">Core Functions and Classes</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_data_shard_object.html" title="DataShardObject is the core container class for data in the DataShard system.">DataShardObject</a> is the core container class for data in the DataShard system.  
+<p><a class="el" href="class_data_shard_object.html" title="DataShardObject is the core container class for data in the DataShard system. This class provides a f...">DataShardObject</a> is the core container class for data in the DataShard system.<br  />
+This class provides a flexible data storage mechanism that can hold any Unreal property type.<br  />
+It uses a type-erased byte buffer approach with a property reference to correctly interpret the stored data.<br  />
+The system maintains these objects in a pool (<a class="el" href="class_data_shard_pool.html">DataShardPool</a>) for efficient reuse.<br  />
+<br  />
+Key capabilities:  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;DataShardObject.h&gt;</code></p>
@@ -147,12 +152,19 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a20d148db814972d80d8e43e700672f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_data_shard_object.html" title="DataShardObject is the core container class for data in the DataShard system.">DataShardObject</a> is the core container class for data in the DataShard system. </p>
-<p>This class provides a flexible data storage mechanism that can hold any Unreal property type. It uses a type-erased byte buffer approach with a property reference to correctly interpret the stored data. The system maintains these objects in a pool for efficient reuse.</p>
-<p>Key capabilities:</p><ul>
-<li>Store and retrieve any UProperty data type</li>
-<li>Maintain type safety through property system</li>
-<li>Support change notifications</li>
+<div class="textblock"><p><a class="el" href="class_data_shard_object.html" title="DataShardObject is the core container class for data in the DataShard system. This class provides a f...">DataShardObject</a> is the core container class for data in the DataShard system.<br  />
+This class provides a flexible data storage mechanism that can hold any Unreal property type.<br  />
+It uses a type-erased byte buffer approach with a property reference to correctly interpret the stored data.<br  />
+The system maintains these objects in a pool (<a class="el" href="class_data_shard_pool.html">DataShardPool</a>) for efficient reuse.<br  />
+<br  />
+Key capabilities: </p>
+<ul>
+<li>Store and retrieve any Property data type<br  />
+</li>
+<li>Maintain type safety through property system<br  />
+</li>
+<li>Support change notifications<br  />
+</li>
 <li>Efficiently manage memory through the pool system </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>

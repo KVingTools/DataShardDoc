@@ -7,5 +7,5 @@ var annotated =
     [ "DataShardPool", "class_data_shard_pool.html", "class_data_shard_pool" ],
     [ "DataShardSettings", "class_data_shard_settings.html", "class_data_shard_settings" ],
     [ "DataShardSubsystem", "class_data_shard_subsystem.html", "class_data_shard_subsystem" ],
-    [ "DataShardUtils_BP", "class_data_shard_utils___b_p.html", null ]
+    [ "DataShardUtils_BP", "class_data_shard_utils___b_p.html", "class_data_shard_utils___b_p" ]
 ];

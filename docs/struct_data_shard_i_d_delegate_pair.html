@@ -106,7 +106,8 @@ $(function(){initNavTree('struct_data_shard_i_d_delegate_pair.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>Pairs a shard ID with a C++ delegate for change notifications Used by the <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to track registered callbacks for data changes.  
+<p>Pairs a shard ID with a C++ delegate for change notifications.<br  />
+Used by the <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to track registered callbacks for data changes.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;DataShardKey.h&gt;</code></p>
@@ -123,15 +124,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6e60d607dd6b7e31efe5f015ffdf3392"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade20bc314f9ba622950fd93be5238124" id="r_ade20bc314f9ba622950fd93be5238124"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade20bc314f9ba622950fd93be5238124">EqualID</a> (const int32 &amp;InID) const</td></tr>
 <tr class="separator:ade20bc314f9ba622950fd93be5238124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245e5a8712047faa2202b7f672e12f2d" id="r_a245e5a8712047faa2202b7f672e12f2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a245e5a8712047faa2202b7f672e12f2d">IsBoundTo</a> (const UObject *Object) const</td></tr>
+<tr class="separator:a245e5a8712047faa2202b7f672e12f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4941f2ebbd393d7806f62f383c81de0a" id="r_a4941f2ebbd393d7806f62f383c81de0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4941f2ebbd393d7806f62f383c81de0a">operator==</a> (const <a class="el" href="#af42e13c48733ccb5ea612282f49a0ed1">FDataShardIDDelegatePair</a> &amp;Other) const</td></tr>
 <tr class="separator:a4941f2ebbd393d7806f62f383c81de0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a94d3c3330ca978f05633b81c76d5e8" id="r_a9a94d3c3330ca978f05633b81c76d5e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a94d3c3330ca978f05633b81c76d5e8">operator!=</a> (const <a class="el" href="#af42e13c48733ccb5ea612282f49a0ed1">FDataShardIDDelegatePair</a> &amp;Other) const</td></tr>
 <tr class="separator:a9a94d3c3330ca978f05633b81c76d5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2383ab9d6f37ab372e4ab3d12a1e4ba6" id="r_a2383ab9d6f37ab372e4ab3d12a1e4ba6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2383ab9d6f37ab372e4ab3d12a1e4ba6">operator=</a> (const <a class="el" href="#af42e13c48733ccb5ea612282f49a0ed1">FDataShardIDDelegatePair</a> &amp;Other) const</td></tr>
-<tr class="separator:a2383ab9d6f37ab372e4ab3d12a1e4ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122fa03a7dc5fdacc69c18ff603e3845" id="r_a122fa03a7dc5fdacc69c18ff603e3845"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af42e13c48733ccb5ea612282f49a0ed1">FDataShardIDDelegatePair</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a122fa03a7dc5fdacc69c18ff603e3845">operator=</a> (const <a class="el" href="#af42e13c48733ccb5ea612282f49a0ed1">FDataShardIDDelegatePair</a> &amp;Other)</td></tr>
+<tr class="separator:a122fa03a7dc5fdacc69c18ff603e3845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Pairs a shard ID with a C++ delegate for change notifications Used by the <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to track registered callbacks for data changes. </p>
+<div class="textblock"><p>Pairs a shard ID with a C++ delegate for change notifications.<br  />
+Used by the <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to track registered callbacks for data changes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ade20bc314f9ba622950fd93be5238124" name="ade20bc314f9ba622950fd93be5238124"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade20bc314f9ba622950fd93be5238124">&#9670;&#160;</a></span>EqualID()</h2>
@@ -277,6 +281,23 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a245e5a8712047faa2202b7f672e12f2d" name="a245e5a8712047faa2202b7f672e12f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245e5a8712047faa2202b7f672e12f2d">&#9670;&#160;</a></span>IsBoundTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataShardIDDelegatePair::IsBoundTo </td>
+          <td>(</td>
+          <td class="paramtype">const UObject *</td>          <td class="paramname"><span class="paramname"><em>Object</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9a94d3c3330ca978f05633b81c76d5e8" name="a9a94d3c3330ca978f05633b81c76d5e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a94d3c3330ca978f05633b81c76d5e8">&#9670;&#160;</a></span>operator!=()</h2>
 
@@ -295,21 +316,20 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2383ab9d6f37ab372e4ab3d12a1e4ba6" name="a2383ab9d6f37ab372e4ab3d12a1e4ba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2383ab9d6f37ab372e4ab3d12a1e4ba6">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a122fa03a7dc5fdacc69c18ff603e3845" name="a122fa03a7dc5fdacc69c18ff603e3845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122fa03a7dc5fdacc69c18ff603e3845">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool DataShardIDDelegatePair::operator= </td>
+          <td class="memname"><a class="el" href="#af42e13c48733ccb5ea612282f49a0ed1">FDataShardIDDelegatePair</a> &amp; DataShardIDDelegatePair::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="#af42e13c48733ccb5ea612282f49a0ed1">FDataShardIDDelegatePair</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>Other</em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assignment operator </p>
 
 </div>
 </div>

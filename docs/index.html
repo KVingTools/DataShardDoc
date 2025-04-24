@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Data Shard Plugin: Main Page</title>
+<title>Data Shard Plugin: Data Shard Plugin</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,10 +98,66 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Data Shard Plugin Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Data Shard Plugin </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md__mainpage"></a> </p><h2>Overview </h2>
+<p>DataShard is a flexible, type-safe data sharing system designed to simplify how you handle game state throughout your Unreal Engine project. Whether you're building a small indie game or a massive AAA title, DataShard provides a robust foundation for all your data management needs.</p>
+<p><br  />
+</p>
+<h2>Key Features </h2>
+<h3>Type-Safe Data Storage </h3>
+<p>Store and share any Unreal-compatible data type with complete type safety. No more casting errors or runtime crashes from improper data handling.</p>
+<h3>Blueprint-Ready Integration</h3>
+<p>Seamlessly create, access, and modify data from both C++ and Blueprints with a comprehensive API designed for developers at all experience levels.</p>
+<p><img src="../images/AllNodes.jpg" alt="All Blueprint Nodes" class="inline"/></p>
+<h3>Actor-Based Data Association</h3>
+<p>Attach data directly to your game actors with intuitive key-based access that maintains proper object relationships.</p>
+<h3>Intelligent Reference Counting</h3>
+<p>Automatic cleanup through smart reference counting ensures your game remains memory efficient, even with complex data relationships.</p>
+<h3>Real-Time Change Notifications</h3>
+<p>Subscribe to data changes through a powerful event system that keeps your game systems in sync without complex wiring.</p>
+<h3>Robust Debugging Tools</h3>
+<p>Visualize data connections and values with built-in debug windows that make tracking down data-related issues a breeze.</p>
+<p><img src="../images/DebugTool.jpg" alt="DataShard Debug Tool" class="inline"/></p>
+<p><br  />
+</p>
+<h2>Perfect For</h2>
+<ul>
+<li><b>Game State Management</b>: Create a centralized state system that multiple gameplay systems can access without tight coupling</li>
+<li><b>UI &amp; Gameplay Communication</b>: Establish clean data flow between your HUD elements and gameplay systems</li>
+<li><b>Actor Communication</b>: Allow different actors to share data without direct references or complex dependency chains</li>
+<li><b>Save Game Systems</b>: Build robust save/load systems with built-in type safety and organized data structures</li>
+<li><b>Event-Driven Gameplay</b>: Create responsive, event-driven gameplay using the built-in notification system</li>
+</ul>
+<p><br  />
+</p>
+<h2>How It Works</h2>
+<p>DataShard is built on three core principles:</p>
+<h3>1. Key-Based Access</h3>
+<p>Each piece of data is associated with a unique key that combines an owner object (typically an Actor) and a string identifier. This creates a clear ownership model while maintaining flexibility.</p>
+<h3>2. Type-Safe Data Storage</h3>
+<p>DataShard leverages Unreal's property system to ensure complete type safety when storing and retrieving data. The system validates property types to prevent runtime errors.</p>
+<h3>3. Reference Counting &amp; Lifecycle Management</h3>
+<p>The system automatically tracks references to data and cleans up when all references are removed. This prevents memory leaks and ensures proper resource management.</p>
+<p><br  />
+</p>
+<h2>Why Choose DataShard ?</h2>
+<ul>
+<li><b>Simplified Architecture</b>: Replace cumbersome game state management with an elegant, centralized solution that scales with your project</li>
+<li><b>Reduced Development Time</b>: Stop writing repetitive boilerplate code for data passing between systems and actors</li>
+<li><b>Improved Stability</b>: Eliminate an entire class of common bugs related to improper data handling and object lifetime management</li>
+<li><b>Future-Proof Design</b>: Built with Unreal Engine's architecture in mind, DataShard integrates perfectly with the engine's subsystem framework</li>
+</ul>
+<p><br  />
+</p>
+<h2>Getting Started</h2>
+<p>DataShard integrates seamlessly with your existing Unreal Engine project. Simply install the plugin, create your first DataShard in minutes, and experience a new level of data management freedom.</p>
+<p><a class="el" href="md_tutorials_2_b_p___tut.html">Blueprint Tutorial</a></p>
+<p><a class="el" href="md_tutorials_2_c_p_p___tut.html">C++ Tutorial</a></p>
+<p><em>Don't let data management complexity hold your game back. Invest in DataShard today and focus on what matters - creating amazing gameplay experiences!</em> </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->

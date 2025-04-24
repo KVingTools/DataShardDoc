@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['bindeventondatachange_0',['BindEventOnDataChange',['../class_data_shard_subsystem.html#abb20a4861c379d6813e9d39de9c645bb',1,'DataShardSubsystem::BindEventOnDataChange(const FDataShardKey &amp;Key, const FOnShardDataChange &amp;Delegate)'],['../class_data_shard_subsystem.html#a9e726983a11e67af6b420e3a2b0fd786',1,'DataShardSubsystem::BindEventOnDataChange(const int32 &amp;ID, const FOnShardDataChange_internal &amp;Delegate)']]],
-  ['bindeventonsharddatachange_1',['BindEventOnShardDataChange',['../class_data_shard_utils___b_p.html#af70eada1476253c649cdaa2924357ef4',1,'DataShardUtils_BP']]]
+  ['bindeventondatachange_0',['BindEventOnDataChange',['../group___delegate.html#gabb20a4861c379d6813e9d39de9c645bb',1,'DataShardSubsystem::BindEventOnDataChange(const FDataShardKey &amp;Key, const FOnShardDataChange &amp;Delegate)'],['../group___delegate.html#ga9e726983a11e67af6b420e3a2b0fd786',1,'DataShardSubsystem::BindEventOnDataChange(const int32 &amp;ID, const FOnShardDataChange_internal &amp;Delegate)']]],
+  ['bindeventonkeyadded_1',['BindEventOnKeyAdded',['../group___delegate.html#ga59ee424e2c01bcf163c9e6495ec12afe',1,'DataShardSubsystem']]],
+  ['bindeventonkeyremoved_2',['BindEventOnKeyRemoved',['../group___delegate.html#ga23ea585221840f00dee32cc136a36831',1,'DataShardSubsystem']]],
+  ['bindeventonshardadded_3',['BindEventOnShardAdded',['../group___delegate.html#ga43e8045e84cf4891f6c359b40599bac1',1,'DataShardSubsystem']]],
+  ['bindeventonsharddatachange_4',['BindEventOnShardDataChange',['../group___utils.html#gaf70eada1476253c649cdaa2924357ef4',1,'DataShardUtils_BP']]],
+  ['bindeventonshardremoved_5',['BindEventOnShardRemoved',['../group___delegate.html#gaf4a7d985c41b51dafe91280761d0e89b',1,'DataShardSubsystem']]],
+  ['blueprint_6',['How to use in Blueprint',['../md_tutorials_2_b_p___tut.html',1,'']]]
 ];

@@ -23,10 +23,15 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
+{text:"DataShard",url:"index.html"},
+{text:"How to",url:"usergroup0.html",children:[
+{text:"BP",url:"md_tutorials_2_b_p___tut.html"},
+{text:"C++",url:"md_tutorials_2_c_p_p___tut.html"}]},
 {text:"Examples",url:"user"},
-{text:"API",url:"usergroup0.html",children:[
+{text:"Topics",url:"topics.html"},
+{text:"API",url:"usergroup1.html",children:[
 {text:"Class List",url:"annotated.html"},
+{text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
 {text:"a",url:"functions.html#index_a"},

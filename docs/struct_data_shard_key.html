@@ -102,11 +102,12 @@ $(function(){initNavTree('struct_data_shard_key.html',''); initResizable(true); 
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="struct_data_shard_key-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DataShardKey Struct Reference</div></div>
+  <div class="headertitle"><div class="title">DataShardKey Struct Reference<div class="ingroups"><a class="el" href="group___core.html">Core Functions and Classes</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>A key that uniquely identifies and provides access to data shards in the DataShard system.  
+<p>A key that uniquely identifies and provides access to data shards in the DataShard system.<br  />
+<a class="el" href="struct_data_shard_key.html" title="A key that uniquely identifies and provides access to data shards in the DataShard system....">DataShardKey</a> combines an object reference (owner) and a string name to form a unique identifier, that can be used to access and manage data within the <a class="el" href="class_data_shard_subsystem.html">DataShardSubsystem</a>.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;DataShardKey.h&gt;</code></p>
@@ -145,8 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd11695c197f5a7d0baba8e7697c8a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A key that uniquely identifies and provides access to data shards in the DataShard system. </p>
-<p><a class="el" href="struct_data_shard_key.html" title="A key that uniquely identifies and provides access to data shards in the DataShard system.">DataShardKey</a> combines an object reference (owner) and a string name to form a unique identifier that can be used to access and manage data within the DataShard subsystem. </p>
+<div class="textblock"><p>A key that uniquely identifies and provides access to data shards in the DataShard system.<br  />
+<a class="el" href="struct_data_shard_key.html" title="A key that uniquely identifies and provides access to data shards in the DataShard system....">DataShardKey</a> combines an object reference (owner) and a string name to form a unique identifier, that can be used to access and manage data within the <a class="el" href="class_data_shard_subsystem.html">DataShardSubsystem</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a14e4fd00716e25cdd95394af3c535d0c" name="a14e4fd00716e25cdd95394af3c535d0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14e4fd00716e25cdd95394af3c535d0c">&#9670;&#160;</a></span>FDataShardKey() <span class="overload">[1/2]</span></h2>
@@ -317,7 +318,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to retrieve the value from </td></tr>
+    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to retrieve the value from </td></tr>
     <tr><td class="paramname">bCheck</td><td>- If true, will verify the data type matches before returning </td></tr>
   </table>
   </dd>
@@ -355,7 +356,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to retrieve the value from </td></tr>
+    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to retrieve the value from </td></tr>
     <tr><td class="paramname">bCheck</td><td>- If true, will verify the data type matches before copying </td></tr>
   </table>
   </dd>
@@ -382,7 +383,7 @@ template&lt;typename T&gt; </div>
 <p>Invalidates this key in the subsystem by removing it Decreases the reference count for the associated shard</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to remove the key from </td></tr>
+    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to remove the key from </td></tr>
   </table>
   </dd>
 </dl>
@@ -434,7 +435,7 @@ template&lt;typename T&gt; </div>
 <p>Checks if this key exists in the subsystem and points to a valid shard</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to check in </td></tr>
+    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to check in </td></tr>
   </table>
   </dd>
 </dl>
@@ -492,7 +493,7 @@ template&lt;typename T&gt; </div>
 <p>Removes this key from the subsystem (alias for Invalidate)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to remove the key from </td></tr>
+    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to remove the key from </td></tr>
   </table>
   </dd>
 </dl>
@@ -526,7 +527,7 @@ template&lt;typename T&gt; </div>
 <p>Sets the value of the shard associated with this key using a property from a UObject</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards.">DataShardSubsystem</a> to set the value in </td></tr>
+    <tr><td class="paramname">Subsystem</td><td>- The <a class="el" href="class_data_shard_subsystem.html" title="DataShardSubsystem manages the creation, access, and lifecycle of DataShards. DataShards are a flexib...">DataShardSubsystem</a> to set the value in </td></tr>
     <tr><td class="paramname">Container</td><td>- The UObject containing the property to copy from </td></tr>
     <tr><td class="paramname">PropertyName</td><td>- The name of the property within the Container to use </td></tr>
   </table>

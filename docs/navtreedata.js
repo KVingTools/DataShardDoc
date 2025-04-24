@@ -25,9 +25,15 @@
 var NAVTREE =
 [
   [ "Data Shard Plugin", "index.html", [
+    [ "How to", "usergroup0.html", [
+      [ "BP", "md_tutorials_2_b_p___tut.html", null ],
+      [ "C++", "md_tutorials_2_c_p_p___tut.html", null ]
+    ] ],
     [ "Examples", "user", null ],
-    [ "API", "usergroup0.html", [
+    [ "Topics", "topics.html", "topics" ],
+    [ "API", "usergroup1.html", [
       [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
