@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['when_20all_20references_20are_20removed_20this_20prevents_20memory_20leaks_20and_20ensures_20proper_20resource_20management_0',['The system automatically tracks references to data and cleans up when all references are removed. This prevents memory leaks and ensures proper resource management.',['../index.html#autotoc_md3',1,'']]],
-  ['whether_20you_20re_20building_20a_20small_20indie_20game_20or_20a_20massive_20aaa_20title_20datashard_20provides_20a_20robust_20foundation_20for_20all_20your_20data_20management_20needs_1',['DataShard is a flexible, type-safe data sharing system designed to simplify how you handle game state throughout your Unreal Engine project. Whether you&apos;re building a small indie game or a massive AAA title, DataShard provides a robust foundation for all your data management needs.',['../index.html#autotoc_md0',1,'']]],
-  ['with_20the_20engine_20s_20subsystem_20framework_2',['* &lt;strong&gt;Future-Proof Design&lt;/strong&gt;: Built with Unreal Engine&apos;s architecture in mind, DataShard integrates perfectly with the engine&apos;s subsystem framework',['../index.html#autotoc_md4',1,'']]],
-  ['with_20unreal_20engine_20s_20architecture_20in_20mind_20datashard_20integrates_20perfectly_20with_20the_20engine_20s_20subsystem_20framework_3',['* &lt;strong&gt;Future-Proof Design&lt;/strong&gt;: Built with Unreal Engine&apos;s architecture in mind, DataShard integrates perfectly with the engine&apos;s subsystem framework',['../index.html#autotoc_md4',1,'']]]
-];

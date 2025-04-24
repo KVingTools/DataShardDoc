@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['ondatachange_0',['OnDataChange',['../class_data_shard_object.html#a20d148db814972d80d8e43e700672f7e',1,'DataShardObject']]],
-  ['operator_21_3d_1',['operator!=',['../struct_data_shard_key_delegate_pair.html#a73d582ea9619184e5bd1252dd1215fa6',1,'DataShardKeyDelegatePair::operator!=()'],['../struct_data_shard_i_d_delegate_pair.html#a9a94d3c3330ca978f05633b81c76d5e8',1,'DataShardIDDelegatePair::operator!=()']]],
-  ['operator_3d_2',['operator=',['../struct_data_shard_key_delegate_pair.html#a0b4d91321d1756c219c4951237b2a473',1,'DataShardKeyDelegatePair::operator=()'],['../struct_data_shard_i_d_delegate_pair.html#a122fa03a7dc5fdacc69c18ff603e3845',1,'DataShardIDDelegatePair::operator=()']]],
-  ['operator_3d_3d_3',['operator==',['../struct_data_shard_key.html#a6d2d28dc09b04f7143c423d547804bc6',1,'DataShardKey::operator==()'],['../struct_data_shard_key_delegate_pair.html#a2c5138a83a441475a7d69cd8b11da1b5',1,'DataShardKeyDelegatePair::operator==()'],['../struct_data_shard_i_d_delegate_pair.html#a4941f2ebbd393d7806f62f383c81de0a',1,'DataShardIDDelegatePair::operator==()']]]
+  ['macros_0',['Helper Macros',['../group___macros.html',1,'']]],
+  ['macros_1',['Get Shard Data with helper macros',['../md_tutorials_2_tutorial_page.html#autotoc_md12',1,'']]],
+  ['makeglobalshardkey_2',['MakeGlobalShardKey',['../group___utils.html#ga386071c217b2a4513a527751a22da363',1,'DataShardUtils_BP']]],
+  ['makeshardkey_3',['MakeShardKey',['../group___utils.html#ga1be2a6c6fa616d544d37775108d3f5da',1,'DataShardUtils_BP']]],
+  ['more_20information_4',['More information',['../md_tutorials_2_tutorial_page.html#autotoc_md15',1,'']]]
 ];

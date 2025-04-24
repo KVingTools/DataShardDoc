@@ -24,12 +24,12 @@
 */
 var menudata={children:[
 {text:"DataShard",url:"index.html"},
-{text:"How to",url:"usergroup0.html",children:[
-{text:"BP",url:"md_tutorials_2_b_p___tut.html"},
-{text:"C++",url:"md_tutorials_2_c_p_p___tut.html"}]},
+{text:"How to",url:"md_tutorials_2_tutorial_page.html",children:[
+{text:"BP",url:"md_tutorials_2_tutorial_page.html#bp_section"},
+{text:"C++",url:"md_tutorials_2_tutorial_page.html#cpp_section"}]},
 {text:"Examples",url:"user"},
 {text:"Topics",url:"topics.html"},
-{text:"API",url:"usergroup1.html",children:[
+{text:"API",url:"usergroup0.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[

@@ -112,8 +112,9 @@ var NAVTREEINDEX0 =
 "group___utils.html#gafb30dfc72a5dc9190643f5844ea84ad0":[2,3,5],
 "hierarchy.html":[3,1],
 "index.html":[],
-"md_tutorials_2_b_p___tut.html":[0,0],
-"md_tutorials_2_c_p_p___tut.html":[0,1],
+"md_tutorials_2_tutorial_page.html":[0],
+"md_tutorials_2_tutorial_page.html#bp_section":[0,0],
+"md_tutorials_2_tutorial_page.html#cpp_section":[0,1],
 "pages.html":[],
 "struct_data_shard_i_d_delegate_pair.html":[3,0,0],
 "struct_data_shard_i_d_delegate_pair.html#a122fa03a7dc5fdacc69c18ff603e3845":[3,0,0,7],
@@ -152,6 +153,5 @@ var NAVTREEINDEX0 =
 "struct_data_shard_key_delegate_pair.html#ad778a0e5857f1a59cd718199bba4952a":[3,0,2,3],
 "topics.html":[2],
 "user":[1],
-"usergroup0.html":[0],
-"usergroup1.html":[3]
+"usergroup0.html":[3]
 };

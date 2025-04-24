@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blueprint_0',['How to use in Blueprint',['../md_tutorials_2_b_p___tut.html',1,'']]]
+  ['data_20shard_20plugin_0',['Data Shard Plugin',['../index.html',1,'']]]
 ];
