@@ -1,18 +1,14 @@
 var searchData=
 [
-  ['set_20shard_20data_0',['Set Shard Data',['../md_tutorials_2_tutorial_page.html#autotoc_md4',1,'']]],
-  ['set_20shard_20data_20with_20datashardsubsystem_1',['Set Shard Data with DataShardSubsystem',['../md_tutorials_2_tutorial_page.html#autotoc_md13',1,'']]],
-  ['set_20shard_20data_20with_20key_2',['Set Shard Data with Key',['../md_tutorials_2_tutorial_page.html#autotoc_md14',1,'']]],
-  ['setdata_3',['SetData',['../class_data_shard_object.html#a1de985803f1907dfda6ae3d57ae637b9',1,'DataShardObject']]],
-  ['setsharddata_4',['SetShardData',['../group___core.html#ga204c943473ad6716e82473053c6c8752',1,'DataShardSubsystem::SetShardData(const FDataShardKey &amp;Key, const void *InData, const FProperty *InProperty) const'],['../group___core.html#ga95611177b5469fda2991054e0778a8f1',1,'DataShardSubsystem::SetShardData(const FDataShardKey &amp;Key, const UObject *Container, const FName &amp;PropertyName) const'],['../group___utils.html#gaf6e8bce901ef79f8355698de593ba68f',1,'DataShardUtils_BP::SetShardData()']]],
-  ['setvalue_5',['SetValue',['../struct_data_shard_key.html#a9dc83f0ac62960d5eade3ed76c1098f1',1,'DataShardKey']]],
-  ['shard_6',['Shard',['../md_tutorials_2_tutorial_page.html#autotoc_md2',1,'Create Shard'],['../md_tutorials_2_tutorial_page.html#autotoc_md9',1,'Create Shard']]],
-  ['shard_20data_7',['Shard Data',['../md_tutorials_2_tutorial_page.html#autotoc_md3',1,'Get Shard Data'],['../md_tutorials_2_tutorial_page.html#autotoc_md4',1,'Set Shard Data']]],
-  ['shard_20data_20with_20datashardsubsystem_8',['Shard Data with DataShardSubsystem',['../md_tutorials_2_tutorial_page.html#autotoc_md10',1,'Get Shard Data with DataShardSubsystem'],['../md_tutorials_2_tutorial_page.html#autotoc_md13',1,'Set Shard Data with DataShardSubsystem']]],
-  ['shard_20data_20with_20helper_20macros_9',['Get Shard Data with helper macros',['../md_tutorials_2_tutorial_page.html#autotoc_md12',1,'']]],
-  ['shard_20data_20with_20key_10',['Shard Data with Key',['../md_tutorials_2_tutorial_page.html#autotoc_md11',1,'Get Shard Data with Key'],['../md_tutorials_2_tutorial_page.html#autotoc_md14',1,'Set Shard Data with Key']]],
-  ['shard_20plugin_11',['Data Shard Plugin',['../index.html',1,'']]],
-  ['sharddataasstring_12',['ShardDataAsString',['../group___debug.html#ga7be1b598452be4133f8ef064014cde6c',1,'DataShardUtils_BP']]],
-  ['shards_13',['Global Keys and Global Shards',['../md_tutorials_2_tutorial_page.html#autotoc_md17',1,'']]],
-  ['shutdownpool_14',['ShutdownPool',['../class_data_shard_pool.html#a470493f9dcf5d4e2dc40c3a52f1a1362',1,'DataShardPool']]]
+  ['remove_0',['Remove',['../struct_data_shard_key.html#ad96a9407759e373782592900314b7359',1,'DataShardKey']]],
+  ['removekey_1',['RemoveKey',['../group___core.html#ga45749621a9fb1eebed4434e2bf9adffe',1,'DataShardSubsystem']]],
+  ['removeshard_2',['RemoveShard',['../group___utils.html#gaecfaba813c918f08fc524f24b3a0d8e6',1,'DataShardUtils_BP']]],
+  ['requestshard_3',['RequestShard',['../class_data_shard_pool.html#a2991a6347971712a089aabaef7faa488',1,'DataShardPool']]],
+  ['reset_4',['Reset',['../class_data_shard_object.html#a5da0042cb85a8eb2b455fee74c88582b',1,'DataShardObject']]],
+  ['return_5fshard_5fdata_5',['RETURN_SHARD_DATA',['../group___macros.html#gabe5d572d69ec4f27a732b63dc95653b4',1,'DataShardMacros.h']]],
+  ['return_5fshard_5fdata_5fchecked_6',['RETURN_SHARD_DATA_CHECKED',['../group___macros.html#gacf9512d5a88ceea6e796680d5463747e',1,'DataShardMacros.h']]],
+  ['return_5fshard_5fdata_5fcopy_7',['RETURN_SHARD_DATA_COPY',['../group___macros.html#ga5c4022cb91be4bacd32989273e08f21f',1,'DataShardMacros.h']]],
+  ['return_5fshard_5fdata_5fcopy_5fchecked_8',['RETURN_SHARD_DATA_COPY_CHECKED',['../group___macros.html#ga706b12537b1b24b4b89ceb978c8bb926',1,'DataShardMacros.h']]],
+  ['return_5fshard_5fmanager_9',['RETURN_SHARD_MANAGER',['../group___macros.html#gab83b3d22d09905173e275471317e60c9',1,'DataShardMacros.h']]],
+  ['returnshard_10',['ReturnShard',['../class_data_shard_pool.html#abecf22321ba351018b196302b737fd5a',1,'DataShardPool']]]
 ];

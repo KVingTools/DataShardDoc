@@ -115,6 +115,7 @@ var NAVTREEINDEX0 =
 "md_tutorials_2_tutorial_page.html":[0],
 "md_tutorials_2_tutorial_page.html#bp_section":[0,0],
 "md_tutorials_2_tutorial_page.html#cpp_section":[0,1],
+"md_tutorials_2_tutorial_page.html#debug_section":[0,2],
 "pages.html":[],
 "struct_data_shard_i_d_delegate_pair.html":[3,0,0],
 "struct_data_shard_i_d_delegate_pair.html#a122fa03a7dc5fdacc69c18ff603e3845":[3,0,0,7],

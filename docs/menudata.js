@@ -26,7 +26,8 @@ var menudata={children:[
 {text:"DataShard",url:"index.html"},
 {text:"How to",url:"md_tutorials_2_tutorial_page.html",children:[
 {text:"BP",url:"md_tutorials_2_tutorial_page.html#bp_section"},
-{text:"C++",url:"md_tutorials_2_tutorial_page.html#cpp_section"}]},
+{text:"C++",url:"md_tutorials_2_tutorial_page.html#cpp_section"},
+{text:"Debug",url:"md_tutorials_2_tutorial_page.html#debug_section"}]},
 {text:"Examples",url:"user"},
 {text:"Topics",url:"topics.html"},
 {text:"API",url:"usergroup0.html",children:[

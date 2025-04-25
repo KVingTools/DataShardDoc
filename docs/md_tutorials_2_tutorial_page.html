@@ -223,7 +223,45 @@ More information</h3>
 Global Keys and Global Shards</h2>
 <p>You can create keys that are global. Means, there is no owner. They work the same way like the normal keys, but you can use them everywhere and they are not bound to an owner.</p>
 <p><img src="./assets/images/ShardKeyGlobal.jpg" alt="Shard Key Global" class="inline"/></p>
-<p><code>const FDataShardKey GlobalKey = {"Global Float Key"};</code> </p>
+<p><code>const FDataShardKey GlobalKey = {"Global Float Key"};</code></p>
+<hr  />
+<p><a class="anchor" id="debug_section"></a></p>
+<h2><a class="anchor" id="autotoc_md19"></a>
+Debugging</h2>
+<h3><a class="anchor" id="autotoc_md20"></a>
+Commands and functions</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Command   </th><th class="markdownTableHeadNone">Function   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DumpAllShards   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#ga4cd3d8468e13ed77b1df8fba8891c16f">DataShardSubsystem::GetShardDump</a>   </td><td class="markdownTableBodyNone">Use this command to get all shards displayed in the output log    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DumpAllKeys   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#ga52639eef9660b6d674dd0409f4e52636">DataShardSubsystem::GetKeyDump</a>   </td><td class="markdownTableBodyNone">Use this command to get all keys displayed in the output log    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DumpAllReferences   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#ga09b5883f8b4f60f2f190b8a64711a49c">DataShardSubsystem::GetRefDump</a>   </td><td class="markdownTableBodyNone">Use this command to get all references displayed in the output log    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DumpAllShardsString   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gacfd2f0eadad2887f1e54f264019724ab">DataShardSubsystem::GetShardStringDump</a>   </td><td class="markdownTableBodyNone">Use this command to get all shards displayed in the output log    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DumpShardPoolSize   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gacd018aaf20357273e544767c22d698a8">DataShardSubsystem::GetPoolSize</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool size    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DumpShardPoolActiveAmount   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gae8f0cfd21e6f71849f26183a94e474dd">DataShardSubsystem::GetActiveShardCount</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool active amount    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DumpShardPoolAvailableAmount   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#ga75e47028084235cd6dcd4d06dd956584">DataShardSubsystem::GetAvailableShardCount</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool available amount   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md21"></a>
+Visual Logger</h3>
+<p>You can use the build in Unreal Engine Vissual Logger. I recommend to take a look at the <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/visual-logger-in-unreal-engine">Unreal Engine Documentation</a></p>
+<h3><a class="anchor" id="autotoc_md22"></a>
+Data Shard Debugger</h3>
+<p>Under Tools → Debug → DataShard Debug you can find the Data Shard Debugger. This allows you to see all keys, shards and data inside the shards.<br  />
+</p>
+<p><img src="./assets/images/DebugTool.jpg" alt="Debugger" class="inline"/></p>
+<p>You can double click on the owner nodes (left side) to jump to the actor.<br  />
+ Selecting a shard node you can see in the details panel the data inside.<br  />
+ With the 'Pause' button on the top left side you can pause changes. So the debugger will freez and you can look everthing as long as you need.<br  />
+ You can filter by Actors (Key Owner). You can select one or multible actors. Selecting one or more actors you will only see the affected shards, keys and actors.<br  />
+ Per default the debugger don't clear when you end the PIE. You can enable this when checking the 'Clear on PIE End' checkbox in the top right.<br  />
+ You can move the nodes as you like. If you want to rest the location you can click on the 'Refresh' button. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
