@@ -108,7 +108,7 @@ $(function(){initNavTree('md_tutorials_2_tutorial_page.html',''); initResizable(
 How to use in BP</h1>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Create Shard</h2>
-<p><img src="/least-github-pages/assets/images/CreateShard.jpg" alt="Create shard BP" class="inline"/></p>
+<p><img src="../assets/images/CreateShard.jpg" alt="Create shard BP" class="inline"/></p>
 <ul>
 <li>Construct a key<ul>
 <li>This Key can be saved or reconstructed</li>
@@ -127,7 +127,7 @@ Create Shard</h2>
 <dl class="section note"><dt>Note</dt><dd>Keep in mind, that the variable 'Plazer Init Health' is not related to the shard. If the shard changed 'Player Init Health' is not affected. Not the other way around either.</dd></dl>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Get Shard Data</h2>
-<p><img src="../images/GetShard.jpg" alt="Get Shard BP" class="inline"/></p>
+<p><img src="../assets/images/GetShard.jpg" alt="Get Shard BP" class="inline"/></p>
 <ul>
 <li>Construct a key or use one saved in a variable<ul>
 <li>In this case we use the static 'Get Player Pawn' to get our Pawn</li>
@@ -144,13 +144,13 @@ Get Shard Data</h2>
 <dl class="section warning"><dt>Warning</dt><dd>In this example we use the 'Get Player Pawn' node. In other situations, you have to make sure that you get the right Actor as an Owner.</dd></dl>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Set Shard Data</h2>
-<p><img src="../images/SetShard.jpg" alt="Set Shard BP" class="inline"/></p>
+<p><img src="../assets/images/SetShard.jpg" alt="Set Shard BP" class="inline"/></p>
 <p>In this example we get the data before we set the data. For this we use the previous saved 'Player Health Key' variable, where the key is saved.</p>
 <p>After we calculated the right value we call 'Set Shard Data' and set the new value in 'In Data'</p>
 <dl class="section warning"><dt>Warning</dt><dd><em>With 'Set Shard Data' we also can change the datatype inside the shard.</em> I highly recommend to <b>not</b> do this to avoid confusion.</dd></dl>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Binding</h2>
-<p><img src="../images/BindingShard.jpg" alt="Shard Binding" class="inline"/></p>
+<p><img src="../assets/images/BindingShard.jpg" alt="Shard Binding" class="inline"/></p>
 <p>Binding is one of the core features of this plugin. We get a new key. With this key we have access to an existing shard. For this we need:</p><ul>
 <li>A key (as variable or as new constructed) which has access to a existing shard</li>
 <li>The new Owner</li>
@@ -160,7 +160,7 @@ Binding</h2>
 <p>Now we can access the same shard data with both keys anytime and we don't need any more data forwarding.</p>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Advanced</h2>
-<p><img src="../images/CreateShard_Advanced.jpg" alt="Shard Binding" class="inline"/> You can add Events which will be executed if a specific shard data changes.</p>
+<p><img src="../assets/images/CreateShard_Advanced.jpg" alt="Shard Binding" class="inline"/> You can add Events which will be executed if a specific shard data changes.</p>
 <p>In this example we modify the Create Shard part, where we add the 'Bind Event on Shard Data Change'. We use the same key, which we used to create the shard. No everytime the shard data changes the event 'On Shard Data Changed' will be executed and will call the 'Update Player UI Health' function.</p>
 <hr  />
 <p><a class="anchor" id="cpp_section"></a></p>
@@ -222,7 +222,7 @@ More information</h3>
 <h2><a class="anchor" id="autotoc_md17"></a>
 Global Keys and Global Shards</h2>
 <p>You can create keys that are global. Means, there is no owner. They work the same way like the normal keys, but you can use them everywhere and they are not bound to an owner.</p>
-<p><img src="../images/ShardKeyGlobal.jpg" alt="Shard Key Global" class="inline"/></p>
+<p><img src="../assets/images/ShardKeyGlobal.jpg" alt="Shard Key Global" class="inline"/></p>
 <p><code>const FDataShardKey GlobalKey = {"Global Float Key"};</code> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
