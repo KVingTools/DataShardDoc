@@ -6,12 +6,14 @@ var hierarchy =
     [ "UBlueprintFunctionLibrary", null, [
       [ "DataShardUtils_BP", "class_data_shard_utils___b_p.html", null ]
     ] ],
+    [ "UDeveloperSettings", null, [
+      [ "DataShardSettings", "class_data_shard_settings.html", null ]
+    ] ],
     [ "UGameInstanceSubsystem", null, [
       [ "DataShardSubsystem", "class_data_shard_subsystem.html", null ]
     ] ],
     [ "UObject", null, [
       [ "DataShardObject", "class_data_shard_object.html", null ],
-      [ "DataShardPool", "class_data_shard_pool.html", null ],
-      [ "DataShardSettings", "class_data_shard_settings.html", null ]
+      [ "DataShardPool", "class_data_shard_pool.html", null ]
     ] ]
 ];

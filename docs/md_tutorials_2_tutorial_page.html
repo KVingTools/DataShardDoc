@@ -111,62 +111,61 @@ Create Shard</h2>
 <p><img src="./assets/images/CreateShard.jpg" alt="Create shard BP" class="inline"/></p>
 <ul>
 <li>Construct a key<ul>
-<li>This Key can be saved or reconstructed</li>
-<li>The owner is per default 'self'. In this case it's the player Pawn</li>
+<li>Keys can either be saved or reconstructed.</li>
+<li>By default, the owner is 'self' — in this case, the player Pawn.</li>
 </ul>
 </li>
 <li>Call the 'Create Shard' node</li>
-<li>Connect the initial data for the shard data<ul>
-<li>You can also conntect a literal</li>
-<li>You need to connect something, so the datatype for the shard can be determined</li>
+<li>Connect the initial data for the shard.<ul>
+<li>You can also connect a literal value.</li>
+<li>You must connect something so the data type for the shard can be determined.</li>
 </ul>
 </li>
 </ul>
-<p>Now you have created a key pointing to the new shard.</p>
-<p>The owner of the key is the Blueprint actor and the key name is 'Player Health'. This key is now pointing to a float shard where the value of 'Player Init Health' is entered.</p>
-<dl class="section note"><dt>Note</dt><dd>Keep in mind, that the variable 'Plazer Init Health' is not related to the shard. If the shard changed 'Player Init Health' is not affected. Not the other way around either.</dd></dl>
+<p>Now you have created a key pointing to the new shard. This key now points to a float shard where the value from 'Player Init Health' is entered. key is now pointing to a float shard where the value of 'Player Init Health' is entered.</p>
+<dl class="section note"><dt>Note</dt><dd>Keep in mind that the variable 'Player Init Health' is not connected to the shard. If the shard changes, 'Player Init Health' is not affected — and vice versa.</dd></dl>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Get Shard Data</h2>
 <p><img src="./assets/images/GetShard.jpg" alt="Get Shard BP" class="inline"/></p>
 <ul>
-<li>Construct a key or use one saved in a variable<ul>
-<li>In this case we use the static 'Get Player Pawn' to get our Pawn</li>
-<li>We use the same name for the key as the key we have created in the step before</li>
+<li>Construct a key or use one saved in a variable.<ul>
+<li>In this case, we use the static 'Get Player Pawn' node to retrieve our Pawn.</li>
+<li>We use the same key name as the one created in the previous step.</li>
 </ul>
 </li>
-<li>Call the 'Get Shard Data'</li>
-<li>Connect the 'Out Data' pin where it need to be<ul>
-<li>Keep in mind that the pin datatype need to match exacly the shard datatype</li>
+<li>Call the 'Get Shard Data' node.</li>
+<li>Connect the 'Out Data' pin to where it is needed.<ul>
+<li>Keep in mind that the pin’s data type must exactly match the shard’s data type.</li>
 </ul>
 </li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>We can reconstruct keys. For this the 'Owner' and the 'Name' need to be <b>exacly</b> the same, as the key we used to create the shard</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>In this example we use the 'Get Player Pawn' node. In other situations, you have to make sure that you get the right Actor as an Owner.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You can reconstruct keys. For this, the 'Owner' and the 'Name' must be exactly the same as the ones used when creating the shard.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>In this example, we use the 'Get Player Pawn' node. In other situations, you must ensure that you retrieve the correct Actor as the Owner.</dd></dl>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Set Shard Data</h2>
 <p><img src="./assets/images/SetShard.jpg" alt="Set Shard BP" class="inline"/></p>
-<p>In this example we get the data before we set the data. For this we use the previous saved 'Player Health Key' variable, where the key is saved.</p>
-<p>After we calculated the right value we call 'Set Shard Data' and set the new value in 'In Data'</p>
-<dl class="section warning"><dt>Warning</dt><dd><em>With 'Set Shard Data' we also can change the datatype inside the shard.</em> I highly recommend to <b>not</b> do this to avoid confusion.</dd></dl>
+<p>In this example, we retrieve the data before setting it. For this, we use the previously saved 'Player Health Key' variable, where the key was stored.</p>
+<p>After calculating the correct value, we call 'Set Shard Data' and assign the new value to the 'In Data' input.</p>
+<dl class="section warning"><dt>Warning</dt><dd><em>With 'Set Shard Data', it is also possible to change the data type inside the shard.</em> However, I highly recommend <b>not</b> doing this to avoid confusion.</dd></dl>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Binding</h2>
 <p><img src="./assets/images/BindingShard.jpg" alt="Shard Binding" class="inline"/></p>
-<p>Binding is one of the core features of this plugin. We get a new key. With this key we have access to an existing shard. For this we need:</p><ul>
-<li>A key (as variable or as new constructed) which has access to a existing shard</li>
+<p>Binding is one of the core features of this plugin. We get a new key, which provides access to an existing shard. To do this, we need:</p><ul>
+<li>A key (either as a variable or newly constructed) that has access to an existing shard.</li>
 <li>The new Owner</li>
 <li>A new Name</li>
 </ul>
-<p>With the 'Create Bound Key' node we get a new key which has access to the same shard as the 'parent'.</p>
-<p>Now we can access the same shard data with both keys anytime and we don't need any more data forwarding.</p>
+<p>With the 'Create Bound Key' node, we create a new key that has access to the same shard as the 'parent'.</p>
+<p>Now we can access the same shard data with both keys at any time, without needing additional data forwarding.</p>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Advanced</h2>
-<p><img src="./assets/images/CreateShard_Advanced.jpg" alt="Shard Binding" class="inline"/> You can add Events which will be executed if a specific shard data changes.</p>
-<p>In this example we modify the Create Shard part, where we add the 'Bind Event on Shard Data Change'. We use the same key, which we used to create the shard. No everytime the shard data changes the event 'On Shard Data Changed' will be executed and will call the 'Update Player UI Health' function.</p>
+<p><img src="./assets/images/CreateShard_Advanced.jpg" alt="Shard Binding" class="inline"/> You can add events that will be executed when specific shard data changes.</p>
+<p>In this example, we modify the 'Create Shard' part by adding the 'Bind Event on Shard Data Change' node. We use the same key that was used to create the shard. Now, every time the shard data changes, the 'On Shard Data Changed' event will be triggered, which will then call the 'Update Player UI Health' function.</p>
 <hr  />
 <p><a class="anchor" id="cpp_section"></a></p>
 <h2><a class="anchor" id="autotoc_md8"></a>
 How to use in C++</h2>
-<p>Most of the functons we need are inside the <a class="el" href="class_data_shard_subsystem.html">DataShardSubsystem</a></p>
+<p>Most of the functions we need are located inside the <a class="el" href="class_data_shard_subsystem.html">DataShardSubsystem</a></p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Create Shard</h3>
 <div class="fragment"><div class="line">.h</div>
@@ -177,8 +176,8 @@ Create Shard</h3>
 <div class="line">const FDataShardKey Key = {this, &quot;Test Float Key&quot;};</div>
 <div class="line">UDataShardSubsystem* Sub = GetGameInstance()-&gt;GetSubsystem&lt;UDataShardSubsystem&gt;();</div>
 <div class="line">Sub-&gt;CreateShard(Key, this, GET_MEMBER_NAME_CHECKED(ThisClass, FloatValue));</div>
-</div><!-- fragment --><p>The <a class="el" href="group___core.html#ga51aa5f090b3a7ca06b0e708926767995">DataShardSubsystem::CreateShard</a> function has 2 overloads. The version with an Container and PropertyName are more user friendly.</p>
-<dl class="section note"><dt>Note</dt><dd>instead of creating the variable <code>Key</code> you can just use the uniform initialization <code>{Owner, "Name"}</code> in the function directly.</dd></dl>
+</div><!-- fragment --><p>The <a class="el" href="group___core.html#ga51aa5f090b3a7ca06b0e708926767995">DataShardSubsystem::CreateShard</a> function has two overloads. The version that includes a Container and PropertyName is more user-friendly.</p>
+<dl class="section note"><dt>Note</dt><dd>Instead of creating the variable <code>Key</code>, you can directly use the uniform initialization <code>{Owner, "Name"}</code> in the function.</dd></dl>
 <h3><a class="anchor" id="autotoc_md10"></a>
 Get Shard Data with DataShardSubsystem</h3>
 <div class="fragment"><div class="line">.cpp</div>
@@ -197,8 +196,8 @@ Get Shard Data with helper macros</h3>
 <div class="line">GET_SHARD_DATA(float, Value, Key);</div>
 </div><!-- fragment --><p><code>RETURN</code> macros returns you a pointer.</p>
 <p><code>GET</code> macros creates for you the pointer variable</p>
-<p>There also other macros that may be usefull. Take a look at <a class="el" href="group___macros.html">Helper Macros</a></p>
-<dl class="section note"><dt>Note</dt><dd>The raw pointer you get with this functions are <b>not</b> copies. This raw pointer pointing at the current value inside the shard. If the value inside the shard changes the pointer will point at the right value. Keep in mind this is not the same for the <code>COPY</code> macros.</dd></dl>
+<p>There are also other macros that may be useful. Take a look at <a class="el" href="group___macros.html">Helper Macros</a>.</p>
+<dl class="section note"><dt>Note</dt><dd>The raw pointers you get with these functions are <b>not</b> copies.These raw pointers point to the current value inside the shard. If the value inside the shard changes, the pointer will automatically point to the updated value. Keep in mind that this behavior is different from the <code>COPY</code> macros.</dd></dl>
 <h3><a class="anchor" id="autotoc_md13"></a>
 Set Shard Data with DataShardSubsystem</h3>
 <div class="fragment"><div class="line">.h</div>
@@ -217,11 +216,11 @@ Set Shard Data with Key</h3>
 <div class="line">Key.SetValue(Sub, this, GET_MEMBER_NAME_CHECKED(ThisClass, FloatValue));</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md15"></a>
 More information</h3>
-<p>Currently there is no way around to use members to create and set the shard data. We use the Unreal Reflection System (Properties), and they are created with the UHT (Unreal Header Tool) at compile time. With more complex or nested data types, like structs where more structs inside, it's to complex to build them at runtime</p>
+<p>Currently, there is no way around using members to create and set the shard data. We use the Unreal Reflection System (Properties), which are created by the UHT (Unreal Header Tool) at compile time. For more complex or nested data types, such as structs that contain other structs, it is too complex to build them at runtime.</p>
 <hr  />
 <h2><a class="anchor" id="autotoc_md17"></a>
 Global Keys and Global Shards</h2>
-<p>You can create keys that are global. Means, there is no owner. They work the same way like the normal keys, but you can use them everywhere and they are not bound to an owner.</p>
+<p>You can create global keys, which means there is no owner. They work the same way as normal keys, but you can use them anywhere, and they are not bound to a specific owner.</p>
 <p><img src="./assets/images/ShardKeyGlobal.jpg" alt="Shard Key Global" class="inline"/></p>
 <p><code>const FDataShardKey GlobalKey = {"Global Float Key"};</code></p>
 <hr  />
@@ -250,18 +249,19 @@ Commands and functions</h3>
 </table>
 <h3><a class="anchor" id="autotoc_md21"></a>
 Visual Logger</h3>
-<p>You can use the build in Unreal Engine Vissual Logger. I recommend to take a look at the <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/visual-logger-in-unreal-engine">Unreal Engine Documentation</a></p>
+<p>You can use the built-in Unreal Engine Visual Logger. I recommend taking a look at the <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/visual-logger-in-unreal-engine">Unreal Engine Documentation</a></p>
 <h3><a class="anchor" id="autotoc_md22"></a>
 Data Shard Debugger</h3>
-<p>Under Tools → Debug → DataShard Debug you can find the Data Shard Debugger. This allows you to see all keys, shards and data inside the shards.<br  />
+<p>Under Tools → Debug → DataShard Debug, you can find the Data Shard Debugger. This tool allows you to view all keys, shards, and the data inside the shards.<br  />
 </p>
 <p><img src="./assets/images/DebugTool.jpg" alt="Debugger" class="inline"/></p>
-<p>You can double click on the owner nodes (left side) to jump to the actor.<br  />
- Selecting a shard node you can see in the details panel the data inside.<br  />
- With the 'Pause' button on the top left side you can pause changes. So the debugger will freez and you can look everthing as long as you need.<br  />
- You can filter by Actors (Key Owner). You can select one or multible actors. Selecting one or more actors you will only see the affected shards, keys and actors.<br  />
- Per default the debugger don't clear when you end the PIE. You can enable this when checking the 'Clear on PIE End' checkbox in the top right.<br  />
- You can move the nodes as you like. If you want to rest the location you can click on the 'Refresh' button. </p>
+<p>You can double-click on the owner nodes (on the left side) to jump to the actor.<br  />
+ When selecting a shard node, you can see the data inside in the Details panel.<br  />
+ With the 'Pause' button at the top left, you can pause changes. This will freeze the debugger, allowing you to inspect everything for as long as you need.<br  />
+ You can filter by Actors (Key Owners). You can select one or multiple actors. When selecting one or more actors, only the affected shards, keys, and actors will be shown.<br  />
+ By default, the debugger doesn't clear when you end the PIE session. You can enable this by checking the 'Clear on PIE End' checkbox in the top right.<br  />
+ You can move the nodes as you like. If you want to reset their location, you can click the 'Refresh' button.<br  />
+ </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
