@@ -122,7 +122,7 @@ Create Shard</h2>
 </ul>
 </li>
 </ul>
-<p>Now you have created a key pointing to the new shard. This key now points to a float shard where the value from 'Player Init Health' is entered. key is now pointing to a float shard where the value of 'Player Init Health' is entered.</p>
+<p>Now you have created a key pointing to the new shard. This key now points to a float shard where the value from 'Player Init Health' is entered.</p>
 <dl class="section note"><dt>Note</dt><dd>Keep in mind that the variable 'Player Init Health' is not connected to the shard. If the shard changes, 'Player Init Health' is not affected — and vice versa.</dd></dl>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Get Shard Data</h2>
@@ -194,10 +194,10 @@ Get Shard Data with helper macros</h3>
 </div><!-- fragment --><p>or</p>
 <div class="fragment"><div class="line">.cpp</div>
 <div class="line">GET_SHARD_DATA(float, Value, Key);</div>
-</div><!-- fragment --><p><code>RETURN</code> macros returns you a pointer.</p>
-<p><code>GET</code> macros creates for you the pointer variable</p>
+</div><!-- fragment --><p><code>RETURN</code> macros return you a pointer.</p>
+<p><code>GET</code> macros create for you the pointer variable</p>
 <p>There are also other macros that may be useful. Take a look at <a class="el" href="group___macros.html">Helper Macros</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>The raw pointers you get with these functions are <b>not</b> copies.These raw pointers point to the current value inside the shard. If the value inside the shard changes, the pointer will automatically point to the updated value. Keep in mind that this behavior is different from the <code>COPY</code> macros.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The raw pointers you get with these functions are <b>not</b> copies. These raw pointers point to the current value inside the shard. If the value inside the shard changes, the pointer will automatically point to the updated value. Keep in mind that this behavior is different from the <code>COPY</code> macros.</dd></dl>
 <h3><a class="anchor" id="autotoc_md13"></a>
 Set Shard Data with DataShardSubsystem</h3>
 <div class="fragment"><div class="line">.h</div>
@@ -216,7 +216,7 @@ Set Shard Data with Key</h3>
 <div class="line">Key.SetValue(Sub, this, GET_MEMBER_NAME_CHECKED(ThisClass, FloatValue));</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md15"></a>
 More information</h3>
-<p>Currently, there is no way around using members to create and set the shard data. We use the Unreal Reflection System (Properties), which are created by the UHT (Unreal Header Tool) at compile time. For more complex or nested data types, such as structs that contain other structs, it is too complex to build them at runtime.</p>
+<p>Currently, there is no way around using members to create and set the shard data. We use the Unreal Reflection System (FProperty), which are created by the UHT (Unreal Header Tool) at compile time. For more complex or nested data types, such as structs that contain other structs, it is too complex to build them at runtime.</p>
 <hr  />
 <h2><a class="anchor" id="autotoc_md17"></a>
 Global Keys and Global Shards</h2>
@@ -241,11 +241,11 @@ Commands and functions</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">DumpAllShardsString   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gacfd2f0eadad2887f1e54f264019724ab">DataShardSubsystem::GetShardStringDump</a>   </td><td class="markdownTableBodyNone">Use this command to get all shards displayed in the output log    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">DumpShardPoolSize   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gacd018aaf20357273e544767c22d698a8">DataShardSubsystem::GetPoolSize</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool size    </td></tr>
+<td class="markdownTableBodyNone">DumpShardPoolSize   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gacd018aaf20357273e544767c22d698a8">DataShardSubsystem::GetPoolSize</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool size displayed in the output log    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">DumpShardPoolActiveAmount   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gae8f0cfd21e6f71849f26183a94e474dd">DataShardSubsystem::GetActiveShardCount</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool active amount    </td></tr>
+<td class="markdownTableBodyNone">DumpShardPoolActiveAmount   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#gae8f0cfd21e6f71849f26183a94e474dd">DataShardSubsystem::GetActiveShardCount</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool active amount displayed in the output log    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">DumpShardPoolAvailableAmount   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#ga75e47028084235cd6dcd4d06dd956584">DataShardSubsystem::GetAvailableShardCount</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool available amount   </td></tr>
+<td class="markdownTableBodyNone">DumpShardPoolAvailableAmount   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#ga75e47028084235cd6dcd4d06dd956584">DataShardSubsystem::GetAvailableShardCount</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool available amount displayed in the output log   </td></tr>
 </table>
 <h3><a class="anchor" id="autotoc_md21"></a>
 Visual Logger</h3>
