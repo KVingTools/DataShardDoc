@@ -1,0 +1,4 @@
+Sitemap: https://kvingtools.github.io/DataShardDoc/sitemap.xml
+
+User-agent: *
+Disallow:
