@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="Getting Startet Page of the Data Shard Unreal Engine Plugin. Here you will find the Documentation on how to start for beginners"/>
-<title>Data Shard Plugin: How to</title>
+<meta name="description" content="Getting Startet Page of the Data Shard Unreal Engine Plugin. Here you will find the Documentation on how to start for beginners and starters"/>
+<title>Data Shard Plugin: Getting Started</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,16 +100,16 @@ $(function(){initNavTree('md_tutorials_2_tutorial_page.html',''); initResizable(
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">How to</div></div>
+  <div class="headertitle"><div class="title">Getting Started</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <p><a class="anchor" id="bp_section"></a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-How to use in BP</h1>
+Getting started with BP</h1>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Create Shard</h2>
-<p><img src="./assets/images/CreateShard.jpg" alt="Create shard BP" class="inline"/></p>
+<p><img src="./assets/images/CreateShard.webp" alt="Create shard BP" class="inline"/></p>
 <ul>
 <li>Construct a key<ul>
 <li>Keys can either be saved or reconstructed.</li>
@@ -127,7 +127,7 @@ Create Shard</h2>
 <dl class="section note"><dt>Note</dt><dd>Keep in mind that the variable 'Player Init Health' is not connected to the shard. If the shard changes, 'Player Init Health' is not affected — and vice versa.</dd></dl>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Get Shard Data</h2>
-<p><img src="./assets/images/GetShard.jpg" alt="Get Shard BP" class="inline"/></p>
+<p><img src="./assets/images/GetShard.webp" alt="Get Shard BP" class="inline"/></p>
 <ul>
 <li>Construct a key or use one saved in a variable.<ul>
 <li>In this case, we use the static 'Get Player Pawn' node to retrieve our Pawn.</li>
@@ -144,13 +144,13 @@ Get Shard Data</h2>
 <dl class="section warning"><dt>Warning</dt><dd>In this example, we use the 'Get Player Pawn' node. In other situations, you must ensure that you retrieve the correct Actor as the Owner.</dd></dl>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Set Shard Data</h2>
-<p><img src="./assets/images/SetShard.jpg" alt="Set Shard BP" class="inline"/></p>
+<p><img src="./assets/images/SetShard.webp" alt="Set Shard BP" class="inline"/></p>
 <p>In this example, we retrieve the data before setting it. For this, we use the previously saved 'Player Health Key' variable, where the key was stored.</p>
 <p>After calculating the correct value, we call 'Set Shard Data' and assign the new value to the 'In Data' input.</p>
 <dl class="section warning"><dt>Warning</dt><dd><em>With 'Set Shard Data', it is also possible to change the data type inside the shard.</em> However, I highly recommend <b>not</b> doing this to avoid confusion.</dd></dl>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Binding</h2>
-<p><img src="./assets/images/BindingShard.jpg" alt="Shard Binding" class="inline"/></p>
+<p><img src="./assets/images/BindingShard.webp" alt="Shard Binding" class="inline"/></p>
 <p>Binding is one of the core features of this plugin. We get a new key, which provides access to an existing shard. To do this, we need:</p><ul>
 <li>A key (either as a variable or newly constructed) that has access to an existing shard.</li>
 <li>The new Owner</li>
@@ -160,12 +160,12 @@ Binding</h2>
 <p>Now we can access the same shard data with both keys at any time, without needing additional data forwarding.</p>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Advanced</h2>
-<p><img src="./assets/images/CreateShard_Advanced.jpg" alt="Shard Binding" class="inline"/> You can add events that will be executed when specific shard data changes.</p>
+<p><img src="./assets/images/CreateShard_Advanced.webp" alt="Shard Binding" class="inline"/> You can add events that will be executed when specific shard data changes.</p>
 <p>In this example, we modify the 'Create Shard' part by adding the 'Bind Event on Shard Data Change' node. We use the same key that was used to create the shard. Now, every time the shard data changes, the 'On Shard Data Changed' event will be triggered, which will then call the 'Update Player UI Health' function.</p>
 <hr  />
 <p><a class="anchor" id="cpp_section"></a></p>
 <h2><a class="anchor" id="autotoc_md8"></a>
-How to use in C++</h2>
+Getting started with C++</h2>
 <p>Most of the functions we need are located inside the <a class="el" href="class_data_shard_subsystem.html">DataShardSubsystem</a></p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Create Shard</h3>
@@ -222,7 +222,7 @@ More information</h3>
 <h2><a class="anchor" id="autotoc_md17"></a>
 Global Keys and Global Shards</h2>
 <p>You can create global keys, which means there is no owner. They work the same way as normal keys, but you can use them anywhere, and they are not bound to a specific owner.</p>
-<p><img src="./assets/images/ShardKeyGlobal.jpg" alt="Shard Key Global" class="inline"/></p>
+<p><img src="./assets/images/ShardKeyGlobal.webp" alt="Shard Key Global" class="inline"/></p>
 <p><code>const FDataShardKey GlobalKey = {"Global Float Key"};</code></p>
 <hr  />
 <p><a class="anchor" id="debug_section"></a></p>
@@ -255,7 +255,7 @@ Visual Logger</h3>
 Data Shard Debugger</h3>
 <p>Under Tools → Debug → DataShard Debug, you can find the Data Shard Debugger. This tool allows you to view all keys, shards, and the data inside the shards.<br  />
 </p>
-<p><img src="./assets/images/DebugTool.jpg" alt="Debugger" class="inline"/></p>
+<p><img src="./assets/images/DebugTool.webp" alt="Debugger" class="inline"/></p>
 <p>You can double-click on the owner nodes (on the left side) to jump to the actor.<br  />
  When selecting a shard node, you can see the data inside in the Details panel.<br  />
  With the 'Pause' button at the top left, you can pause changes. This will freeze the debugger, allowing you to inspect everything for as long as you need.<br  />

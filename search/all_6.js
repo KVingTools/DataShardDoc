@@ -36,8 +36,11 @@ var searchData=
   ['getsharddump_33',['GetShardDump',['../group___debug.html#ga4cd3d8468e13ed77b1df8fba8891c16f',1,'DataShardSubsystem']]],
   ['getshardidsforobject_34',['GetShardIDsForObject',['../group___debug.html#ga6948c94ff546d9f2fd936f2829834f40',1,'DataShardSubsystem']]],
   ['getshardstringdump_35',['GetShardStringDump',['../group___debug.html#gacfd2f0eadad2887f1e54f264019724ab',1,'DataShardSubsystem']]],
-  ['getvalue_36',['GetValue',['../struct_data_shard_key.html#a6d5b4675ff92c69d9900dcea19d6b564',1,'DataShardKey']]],
-  ['getvaluecopy_37',['GetValueCopy',['../struct_data_shard_key.html#a4bee9a48abeca3453490b36b1e462cf7',1,'DataShardKey']]],
-  ['global_20keys_20and_20global_20shards_38',['Global Keys and Global Shards',['../md_tutorials_2_tutorial_page.html#autotoc_md17',1,'']]],
-  ['global_20shards_39',['Global Keys and Global Shards',['../md_tutorials_2_tutorial_page.html#autotoc_md17',1,'']]]
+  ['getting_20started_36',['Getting Started',['../md_tutorials_2_tutorial_page.html',1,'']]],
+  ['getting_20started_20with_20bp_37',['Getting started with BP',['../md_tutorials_2_tutorial_page.html#autotoc_md1',1,'']]],
+  ['getting_20started_20with_20c_38',['Getting started with C++',['../md_tutorials_2_tutorial_page.html#autotoc_md8',1,'']]],
+  ['getvalue_39',['GetValue',['../struct_data_shard_key.html#a6d5b4675ff92c69d9900dcea19d6b564',1,'DataShardKey']]],
+  ['getvaluecopy_40',['GetValueCopy',['../struct_data_shard_key.html#a4bee9a48abeca3453490b36b1e462cf7',1,'DataShardKey']]],
+  ['global_20keys_20and_20global_20shards_41',['Global Keys and Global Shards',['../md_tutorials_2_tutorial_page.html#autotoc_md17',1,'']]],
+  ['global_20shards_42',['Global Keys and Global Shards',['../md_tutorials_2_tutorial_page.html#autotoc_md17',1,'']]]
 ];

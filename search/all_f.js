@@ -15,5 +15,8 @@ var searchData=
   ['shard_20plugin_12',['Data Shard Plugin',['../index.html',1,'']]],
   ['sharddataasstring_13',['ShardDataAsString',['../group___debug.html#ga7be1b598452be4133f8ef064014cde6c',1,'DataShardUtils_BP']]],
   ['shards_14',['Global Keys and Global Shards',['../md_tutorials_2_tutorial_page.html#autotoc_md17',1,'']]],
-  ['shutdownpool_15',['ShutdownPool',['../class_data_shard_pool.html#a470493f9dcf5d4e2dc40c3a52f1a1362',1,'DataShardPool']]]
+  ['shutdownpool_15',['ShutdownPool',['../class_data_shard_pool.html#a470493f9dcf5d4e2dc40c3a52f1a1362',1,'DataShardPool']]],
+  ['started_16',['Getting Started',['../md_tutorials_2_tutorial_page.html',1,'']]],
+  ['started_20with_20bp_17',['Getting started with BP',['../md_tutorials_2_tutorial_page.html#autotoc_md1',1,'']]],
+  ['started_20with_20c_18',['Getting started with C++',['../md_tutorials_2_tutorial_page.html#autotoc_md8',1,'']]]
 ];

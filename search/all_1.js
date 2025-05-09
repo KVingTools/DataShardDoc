@@ -7,5 +7,5 @@ var searchData=
   ['bindeventonsharddatachange_4',['BindEventOnShardDataChange',['../group___utils.html#gaf70eada1476253c649cdaa2924357ef4',1,'DataShardUtils_BP']]],
   ['bindeventonshardremoved_5',['BindEventOnShardRemoved',['../group___delegate.html#gaf4a7d985c41b51dafe91280761d0e89b',1,'DataShardSubsystem']]],
   ['binding_6',['Binding',['../md_tutorials_2_tutorial_page.html#autotoc_md5',1,'']]],
-  ['bp_7',['How to use in BP',['../md_tutorials_2_tutorial_page.html#autotoc_md1',1,'']]]
+  ['bp_7',['Getting started with BP',['../md_tutorials_2_tutorial_page.html#autotoc_md1',1,'']]]
 ];

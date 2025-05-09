@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['c_0',['How to use in C++',['../md_tutorials_2_tutorial_page.html#autotoc_md8',1,'']]],
+  ['c_0',['Getting started with C++',['../md_tutorials_2_tutorial_page.html#autotoc_md8',1,'']]],
   ['classes_1',['Core Functions and Classes',['../group___core.html',1,'']]],
   ['commands_20and_20functions_2',['Commands and functions',['../md_tutorials_2_tutorial_page.html#autotoc_md20',1,'']]],
   ['core_20functions_20and_20classes_3',['Core Functions and Classes',['../group___core.html',1,'']]],

@@ -14,7 +14,5 @@ var searchData=
   ['unbindeventonshardadded_11',['UnbindEventOnShardAdded',['../group___delegate.html#ga6d7e81cebed8d52d64f036cca5358453',1,'DataShardSubsystem']]],
   ['unbindeventonsharddatachange_12',['UnbindEventOnShardDataChange',['../group___utils.html#ga03eb2a013d9835c9954df02c953f9eb7',1,'DataShardUtils_BP']]],
   ['unbindeventonshardremoved_13',['UnbindEventOnShardRemoved',['../group___delegate.html#ga9c7d6c5c8838434dc908590e01144854',1,'DataShardSubsystem']]],
-  ['use_20in_20bp_14',['How to use in BP',['../md_tutorials_2_tutorial_page.html#autotoc_md1',1,'']]],
-  ['use_20in_20c_15',['How to use in C++',['../md_tutorials_2_tutorial_page.html#autotoc_md8',1,'']]],
-  ['util_20functions_16',['Util functions',['../group___utils.html',1,'']]]
+  ['util_20functions_14',['Util functions',['../group___utils.html',1,'']]]
 ];
