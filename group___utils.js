@@ -9,6 +9,7 @@ var group___utils =
     [ "DataShardUtils_BP::MakeGlobalShardKey", "group___utils.html#ga386071c217b2a4513a527751a22da363", null ],
     [ "DataShardUtils_BP::MakeShardKey", "group___utils.html#ga1be2a6c6fa616d544d37775108d3f5da", null ],
     [ "DataShardUtils_BP::RemoveShard", "group___utils.html#gaecfaba813c918f08fc524f24b3a0d8e6", null ],
+    [ "DataShardUtils_BP::SetOrCreateShard", "group___utils.html#gaad46ae55885d7a542706b48220a918e5", null ],
     [ "DataShardUtils_BP::SetShardData", "group___utils.html#gaf6e8bce901ef79f8355698de593ba68f", null ],
     [ "DataShardUtils_BP::UnbindAllEventsOnShardDataChange", "group___utils.html#ga0510403d41e12851956c453941582fd8", null ],
     [ "DataShardUtils_BP::UnbindEventOnShardDataChange", "group___utils.html#ga03eb2a013d9835c9954df02c953f9eb7", null ]

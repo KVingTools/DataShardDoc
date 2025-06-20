@@ -113,6 +113,8 @@ All functions can be found in the <a class="el" href="class_data_shard_utils___b
 Functions</h2></td></tr>
 <tr class="memitem:gaa1b2dc64052cb22278e1a628ed95ba20" id="r_gaa1b2dc64052cb22278e1a628ed95ba20"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa1b2dc64052cb22278e1a628ed95ba20">DataShardUtils_BP::CreateShard</a> (const UObject *WorldContextObject, const FDataShardKey &amp;Key, const int32 &amp;InitData)</td></tr>
 <tr class="separator:gaa1b2dc64052cb22278e1a628ed95ba20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad46ae55885d7a542706b48220a918e5" id="r_gaad46ae55885d7a542706b48220a918e5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaad46ae55885d7a542706b48220a918e5">DataShardUtils_BP::SetOrCreateShard</a> (const UObject *WorldContextObject, const FDataShardKey &amp;Key, const int32 &amp;InitData)</td></tr>
+<tr class="separator:gaad46ae55885d7a542706b48220a918e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaecfaba813c918f08fc524f24b3a0d8e6" id="r_gaecfaba813c918f08fc524f24b3a0d8e6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaecfaba813c918f08fc524f24b3a0d8e6">DataShardUtils_BP::RemoveShard</a> (const UObject *WorldContextObject, const FDataShardKey &amp;Key)</td></tr>
 <tr class="separator:gaecfaba813c918f08fc524f24b3a0d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf6e8bce901ef79f8355698de593ba68f" id="r_gaf6e8bce901ef79f8355698de593ba68f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf6e8bce901ef79f8355698de593ba68f">DataShardUtils_BP::SetShardData</a> (const UObject *WorldContextObject, const FDataShardKey &amp;Key, const int32 &amp;InData)</td></tr>
@@ -520,6 +522,50 @@ All functions can be found in the <a class="el" href="class_data_shard_utils___b
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the key was successfully removed, false if the key or DataShard was not found </dd></dl>
+
+</div>
+</div>
+<a id="gaad46ae55885d7a542706b48220a918e5" name="gaad46ae55885d7a542706b48220a918e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad46ae55885d7a542706b48220a918e5">&#9670;&#160;</a></span>SetOrCreateShard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool DataShardUtils_BP::SetOrCreateShard </td>
+          <td>(</td>
+          <td class="paramtype">const UObject *</td>          <td class="paramname"><span class="paramname"><em>WorldContextObject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FDataShardKey &amp;</td>          <td class="paramname"><span class="paramname"><em>Key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32 &amp;</td>          <td class="paramname"><span class="paramname"><em>InitData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a new DataShard with the specified key and data if no DataShard exist. If the Key points to a existing Shard the given data will be set</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">WorldContextObject</td><td>Object that provides access to the world </td></tr>
+    <tr><td class="paramname">Key</td><td>Key that will be used to access the DataShard </td></tr>
+    <tr><td class="paramname">InitData</td><td>The initial or new data to store in the DataShard (can be any data type) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the DataShard was successfully created or exist, false otherwise </dd></dl>
 
 </div>
 </div>

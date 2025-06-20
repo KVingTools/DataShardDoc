@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="Getting Startet Page of the Data Shard Unreal Engine Plugin. Here you will find the Documentation on how to start for beginners and starters"/>
 <title>Data Shard Plugin: Getting Started</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -224,11 +223,15 @@ Global Keys and Global Shards</h2>
 <p>You can create global keys, which means there is no owner. They work the same way as normal keys, but you can use them anywhere, and they are not bound to a specific owner.</p>
 <p><img src="./assets/images/ShardKeyGlobal.webp" alt="Shard Key Global" class="inline"/></p>
 <p><code>const FDataShardKey GlobalKey = {"Global Float Key"};</code></p>
+<h2><a class="anchor" id="autotoc_md18"></a>
+Set Self Data</h2>
+<p>To set self in a shard you need to cast the self node or create a variable. Otherwise you will get an error.</p>
+<p><img src="./assets/images/SetSelfShard.webp" alt="Set self in Shard" class="inline"/></p>
 <hr  />
 <p><a class="anchor" id="debug_section"></a></p>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Debugging</h2>
-<h3><a class="anchor" id="autotoc_md20"></a>
+<h3><a class="anchor" id="autotoc_md21"></a>
 Commands and functions</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -248,10 +251,10 @@ Commands and functions</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">DumpShardPoolAvailableAmount   </td><td class="markdownTableBodyNone"><a class="el" href="group___debug.html#ga75e47028084235cd6dcd4d06dd956584">DataShardSubsystem::GetAvailableShardCount</a>   </td><td class="markdownTableBodyNone">Use this command to get shard pool available amount displayed in the output log   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md21"></a>
+<h3><a class="anchor" id="autotoc_md22"></a>
 Visual Logger</h3>
 <p>You can use the built-in Unreal Engine Visual Logger. I recommend taking a look at the <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/visual-logger-in-unreal-engine">Unreal Engine Documentation</a></p>
-<h3><a class="anchor" id="autotoc_md22"></a>
+<h3><a class="anchor" id="autotoc_md23"></a>
 Data Shard Debugger</h3>
 <p>Under Tools → Debug → DataShard Debug, you can find the Data Shard Debugger. This tool allows you to view all keys, shards, and the data inside the shards.<br  />
 </p>

@@ -10,6 +10,7 @@ var class_data_shard_utils___b_p =
     [ "MakeGlobalShardKey", "group___utils.html#ga386071c217b2a4513a527751a22da363", null ],
     [ "MakeShardKey", "group___utils.html#ga1be2a6c6fa616d544d37775108d3f5da", null ],
     [ "RemoveShard", "group___utils.html#gaecfaba813c918f08fc524f24b3a0d8e6", null ],
+    [ "SetOrCreateShard", "group___utils.html#gaad46ae55885d7a542706b48220a918e5", null ],
     [ "SetShardData", "group___utils.html#gaf6e8bce901ef79f8355698de593ba68f", null ],
     [ "ShardDataAsString", "group___debug.html#ga7be1b598452be4133f8ef064014cde6c", null ],
     [ "UnbindAllEventsOnShardDataChange", "group___utils.html#ga0510403d41e12851956c453941582fd8", null ],

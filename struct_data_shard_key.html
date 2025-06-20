@@ -116,6 +116,8 @@ $(function(){initNavTree('struct_data_shard_key.html',''); initResizable(true); 
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a14e4fd00716e25cdd95394af3c535d0c" id="r_a14e4fd00716e25cdd95394af3c535d0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14e4fd00716e25cdd95394af3c535d0c">FDataShardKey</a> ()</td></tr>
 <tr class="separator:a14e4fd00716e25cdd95394af3c535d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c05e1e420850e5a47bb91236558eb4b" id="r_a7c05e1e420850e5a47bb91236558eb4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c05e1e420850e5a47bb91236558eb4b">FDataShardKey</a> (const FString &amp;InName)</td></tr>
+<tr class="separator:a7c05e1e420850e5a47bb91236558eb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b8ccdcd5c71a51c6fc3c4e7be683bd" id="r_a90b8ccdcd5c71a51c6fc3c4e7be683bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90b8ccdcd5c71a51c6fc3c4e7be683bd">FDataShardKey</a> (UObject *InOwner, const FString &amp;InName)</td></tr>
 <tr class="separator:a90b8ccdcd5c71a51c6fc3c4e7be683bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d5b4675ff92c69d9900dcea19d6b564" id="r_a6d5b4675ff92c69d9900dcea19d6b564"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
@@ -150,7 +152,7 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="struct_data_shard_key.html" title="A key that uniquely identifies and provides access to data shards in the DataShard system....">DataShardKey</a> combines an object reference (owner) and a string name to form a unique identifier, that can be used to access and manage data within the <a class="el" href="class_data_shard_subsystem.html">DataShardSubsystem</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a14e4fd00716e25cdd95394af3c535d0c" name="a14e4fd00716e25cdd95394af3c535d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e4fd00716e25cdd95394af3c535d0c">&#9670;&#160;</a></span>FDataShardKey() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e4fd00716e25cdd95394af3c535d0c">&#9670;&#160;</a></span>FDataShardKey() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,8 +176,40 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7c05e1e420850e5a47bb91236558eb4b" name="a7c05e1e420850e5a47bb91236558eb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c05e1e420850e5a47bb91236558eb4b">&#9670;&#160;</a></span>FDataShardKey() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataShardKey::FDataShardKey </td>
+          <td>(</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a global key with a name</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">InName</td><td>- A unique name for this key within global scope </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a90b8ccdcd5c71a51c6fc3c4e7be683bd" name="a90b8ccdcd5c71a51c6fc3c4e7be683bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90b8ccdcd5c71a51c6fc3c4e7be683bd">&#9670;&#160;</a></span>FDataShardKey() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b8ccdcd5c71a51c6fc3c4e7be683bd">&#9670;&#160;</a></span>FDataShardKey() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,6 +358,7 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the typed value, or nullptr if key is invalid or type mismatch </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>You need to include DataShardTemplates.h for this function to compile! </dd></dl>
 
 </div>
 </div>
@@ -363,6 +398,7 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Shared pointer to a copy of the value, or nullptr if key is invalid or type mismatch </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The copy will not be updated if the original value changes </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>You need to include DataShardTemplates.h for this function to compile! </dd></dl>
 
 </div>
 </div>
@@ -413,7 +449,8 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Checks if this key has valid structure (non-null owner and non-empty name) This does not check if the key exists in a subsystem</p>
+<p>Checks if this key has a valid structure (non-null owner and non-empty name).</p>
+<dl class="section warning"><dt>Warning</dt><dd>This does not check if the key exists in a subsystem! </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the key has a valid structure, false otherwise </dd></dl>
 
 </div>
