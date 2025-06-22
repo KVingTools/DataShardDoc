@@ -190,6 +190,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ga3ea2844e2df4e0a91b25942f9cb3de54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae865f06460f43e8e5cbf06cbd769490a" id="r_ae865f06460f43e8e5cbf06cbd769490a"><td class="memItemLeft" align="right" valign="top">const FFieldClass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae865f06460f43e8e5cbf06cbd769490a">GetFieldClassFromShard</a> (const FDataShardKey &amp;Key) const</td></tr>
 <tr class="separator:ae865f06460f43e8e5cbf06cbd769490a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac818409dcdf19f534f21fe06006ee62f" id="r_ac818409dcdf19f534f21fe06006ee62f"><td class="memItemLeft" align="right" valign="top">FString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac818409dcdf19f534f21fe06006ee62f">GetObjectPropertyClassNameFromShard</a> (const FDataShardKey &amp;Key) const</td></tr>
+<tr class="separator:ac818409dcdf19f534f21fe06006ee62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c879171d269fc9ab5e24f7664474d1" id="r_a75c879171d269fc9ab5e24f7664474d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75c879171d269fc9ab5e24f7664474d1">IsDataShardSameType</a> (const FDataShardKey &amp;Key, const FProperty *InProperty) const</td></tr>
 <tr class="separator:a75c879171d269fc9ab5e24f7664474d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf28b0360ee79c938e2b34cb0b82574" id="r_a3cf28b0360ee79c938e2b34cb0b82574"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cf28b0360ee79c938e2b34cb0b82574">IsShardTypeOf</a> (const FDataShardKey &amp;Key, const FFieldClass *InClass) const</td></tr>
@@ -283,6 +285,31 @@ This subsystem acts as the central manager for all DataShard operations and shou
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The FFieldClass of the property, or nullptr if the key is invalid </dd></dl>
+
+</div>
+</div>
+<a id="ac818409dcdf19f534f21fe06006ee62f" name="ac818409dcdf19f534f21fe06006ee62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac818409dcdf19f534f21fe06006ee62f">&#9670;&#160;</a></span>GetObjectPropertyClassNameFromShard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FString DataShardSubsystem::GetObjectPropertyClassNameFromShard </td>
+          <td>(</td>
+          <td class="paramtype">const FDataShardKey &amp;</td>          <td class="paramname"><span class="paramname"><em>Key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves the ObjectProperty class name if the shard is a FObjectProperty</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Key</td><td>The key of the shard to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The PropertyClass name, if the property inside the shard is a FObjectProperty </dd></dl>
 
 </div>
 </div>

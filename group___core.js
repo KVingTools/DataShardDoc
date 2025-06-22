@@ -50,6 +50,7 @@ var group___core =
       [ "GetDebugDataForShard", "group___debug.html#ga8232dad6b601b3e78531ce55b1ae803e", null ],
       [ "GetFieldClassFromShard", "class_data_shard_subsystem.html#ae865f06460f43e8e5cbf06cbd769490a", null ],
       [ "GetKeyDump", "group___debug.html#ga52639eef9660b6d674dd0409f4e52636", null ],
+      [ "GetObjectPropertyClassNameFromShard", "class_data_shard_subsystem.html#ac818409dcdf19f534f21fe06006ee62f", null ],
       [ "GetPoolSize", "group___debug.html#gacd018aaf20357273e544767c22d698a8", null ],
       [ "GetRefDump", "group___debug.html#ga09b5883f8b4f60f2f190b8a64711a49c", null ],
       [ "GetShardData", "group___core.html#gad7a6be3aea3bee185d6d68a6eb114814", null ],
